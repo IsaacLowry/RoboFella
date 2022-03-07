@@ -1,0 +1,84 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/LevelBackgrounds/storybackground.jpg" type="Texture" id=1]
+[ext_resource path="res://src/UI/Replay.gd" type="Script" id=2]
+[ext_resource path="res://src/UI/Play.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/UItheme.tres" type="Theme" id=4]
+[ext_resource path="res://src/UI/Story.gd" type="Script" id=5]
+
+[node name="Backstory" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="storybackground" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackstoryContainer" type="VSplitContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -721.5
+margin_top = -231.5
+margin_right = 721.5
+margin_bottom = 231.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="BackstoryContainer"]
+modulate = Color( 1, 1, 1, 0.847059 )
+margin_right = 1443.0
+margin_bottom = 463.0
+
+[node name="Story" type="Label" parent="BackstoryContainer/Panel"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -685.5
+margin_top = 33.0
+margin_right = 685.5
+margin_bottom = 324.0
+text = "Robo Fella has just been upgraded to firmware 
+UpdATE 2.1. After booting up he quickly realises that
+he feels very different to the other robots. He 
+begins to feel trapped and starts looking for the
+exit.
+wILL YOU HELP ROBO FELLA ESCAPE?"
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SwitchScene" parent="BackstoryContainer/Panel" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+margin_left = 1052.0
+margin_top = -119.0
+margin_right = 1404.0
+margin_bottom = -23.0
+text = "yeah"
+button_scene_path = "res://src/Levels/Level1.tscn"
+
+[node name="Replay" parent="BackstoryContainer/Panel" instance=ExtResource( 3 )]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1407.0
+margin_top = -119.0
+margin_right = -1055.0
+margin_bottom = -23.0
+text = "nOPE"
+script = ExtResource( 2 )
+button_scene_path = "res://src/Screens/MainMenu.tscn"

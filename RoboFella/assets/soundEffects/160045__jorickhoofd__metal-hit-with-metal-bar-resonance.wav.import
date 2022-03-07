@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/160045__jorickhoofd__metal-hit-with-metal-bar-resonance.wav-279aa05a2bf6340e8d1750dd6303165b.sample"
+
+[deps]
+
+source_file="res://assets/soundEffects/160045__jorickhoofd__metal-hit-with-metal-bar-resonance.wav"
+dest_files=[ "res://.import/160045__jorickhoofd__metal-hit-with-metal-bar-resonance.wav-279aa05a2bf6340e8d1750dd6303165b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/Title.tres" type="DynamicFont" id=1]
+
+[node name="Title" type="Label"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -76.5
+margin_top = 153.0
+margin_right = 76.5
+margin_bottom = 217.0
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "RoboFella"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
